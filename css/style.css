@@ -1,0 +1,72 @@
+body{
+    background-color: lavenderblush;
+}
+
+nav{
+    padding: 50px 5px 20px 5px;
+}
+
+nav li{
+    display: inline;
+    padding: 30px;
+    font-size: larger;
+}
+
+nav ul{
+    padding-top: 30px;
+}
+
+.skip a{
+    position: absolute;
+    top: -40px;
+    left: 10px;
+}
+
+.skip a:focus{
+    top: 20px;
+}
+
+.active{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rebeccapurple;
+}
+
+figure{
+    float: initial;
+    width: 100%;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin: 50px;
+}
+
+p{
+    width: 75%;
+    text-align: center;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
