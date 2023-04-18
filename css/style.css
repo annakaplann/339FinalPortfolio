@@ -1,5 +1,6 @@
+/* Mobile View */
 body{
-    background-color: lavenderblush;
+    background-color: #FFFFED;
 }
 
 nav{
@@ -7,17 +8,21 @@ nav{
 }
 
 nav li{
-    display: inline;
-    padding: 30px;
+    padding: 10px;
     font-size: larger;
 }
 
 nav ul{
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .skip a{
     position: absolute;
+    color: #00274C;
+    border: 2px solid #00274C;
     top: -40px;
     left: 10px;
 }
@@ -35,7 +40,8 @@ header{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
+    justify-content: space-between;
+    color: #00274C;
 }
 
 h1{
@@ -43,24 +49,31 @@ h1{
     position: relative;
     top: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rebeccapurple;
+}
+
+footer{
+    color: #00274C;
+    position: relative;
 }
 
 figure{
     float: initial;
-    width: 100%;
+    width: 70%;
     text-align: center;
+    color: #00274C;
+}
+
+figcaption{
+    display: none;
+    margin: 10px;
 }
 
 .grid{
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-gap: 20px;
-    justify-content: space-evenly;
-    align-items: center;
+    grid-template-columns: auto;
     justify-items: center;
-    padding: 0;
-    margin: 50px;
+    margin: 20px;
+    grid-gap: 30px;
 }
 
 p{
@@ -69,4 +82,76 @@ p{
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
+    color: #00274C;
+}
+
+.video{
+    object-fit: cover;
+}
+
+/* Tablet View */
+@media screen and (min-width: 700px){
+   
+    nav{
+        padding-top: 70px;
+    }
+
+    nav li{
+        display: inline;
+    }
+
+    nav ul{
+        flex-direction: column-reverse;
+        display: inline;
+    }
+
+    .grid{
+        grid-template-columns: auto auto;
+        grid-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    figure{
+        width: 100%;
+    }
+
+    figcaption{
+        display: block;
+    }
+
+    .large{
+        display: none;
+    }
+
+}
+
+/* Large Screen View */
+@media screen and (min-width: 1000px){
+    
+    .grid{
+        grid-template-columns: auto auto auto;
+        align-items: flex-start;
+    }
+
+    header{
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+
+    nav{
+        position: absolute;
+        top: -10px;
+        right: 30px;
+    }
+
+    .large{
+        display: block;
+    }
+
+    .tablet{
+        display: none;
+    }
 }

@@ -9,8 +9,8 @@
     <title>Home</title>
 </head>
 <body>
+    <div class="skip"><a href="#main">Skip to Content</a></div>
     <header>
-        <div class="skip"><a href="#main">Skip to Content</a></div>
         <nav>
             <ul>
                 <li class="active"><a href = "index.html">Home</a>
@@ -20,8 +20,46 @@
         </nav>
         <h1>Home</h1>
     </header>
-    <main>
+    <main id = "main">
         <p>Welcome to my website! Here you will be able to learn a little more about me and the important aspects of my life. Click on the academics tab to learn about what I do at the University of Michigan or the extracurriculars tab to learn about the clubs I'm in and job I have over the summer.</p>
+        <div class="grid">
+            <figure>
+                <img src = "images/Me.jpg" alt = "Me sitting in a cafe" width = "250" height="330"/>
+                <figcaption class="tablet">
+                    <details>
+                        <summary>Me</summary>
+                        <p>This is me at a café in the Hamptons.</p>
+                    </details>
+                </figcaption>
+                <figcaption class="large">This is me at a café in the Hamptons.</figcaption>
+            </figure>
+            
+            <figure>
+                <img src = "images/Friends.JPG" alt = "Me with my friends on game day" width="300" height="330"/>
+                <figcaption class="tablet">
+                    <details>
+                        <summary>Game Day</summary>
+                        <p>This is me with some of my friends on game day.</p>
+                    </details>
+                </figcaption>
+                <figcaption class="large">This is me with some of my friends on game day.</figcaption>
+            </figure>
+
+            <figure>
+                <img src = "images/Walle.jpg" alt = "Gray cat sleeping in a bed with a blanket" width="250"/>
+                <figcaption class="tablet">
+                    <details>
+                        <summary>Walle</summary>
+                        <p>This is my cat Walle.</p>
+                    </details>
+                </figcaption>
+                <figcaption class="large">This is my cat Walle.</figcaption>
+            </figure>
+        </div>
     </main>
+    <footer>
+        <p>Anna Kaplan SI 339 Winter 2023</p>
+    </footer>
+    <script src="js/portfolio.js"></script>
 </body>
 </html>
